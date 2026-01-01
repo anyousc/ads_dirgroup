@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Đang Chuyển Hướng</title>
+    <title>ADS</title>
     <style>
         * {
             margin: 0;
@@ -24,7 +24,10 @@
             background: rgba(255,255,255, 0.93);
             backdrop-filter: blur(14px);
             border-radius: 20px;
-            padding: 60px 70px 70px;
+            /* Thu nhỏ bề ngang đáng kể */
+            max-width: 320px;          /* <-- thay đổi chính ở đây */
+            width: 90%;
+            padding: 50px 30px 60px;   /* padding nhỏ hơn để gọn */
             box-shadow: 0 16px 40px rgba(0,0,0,0.12);
             text-align: center;
             
@@ -43,9 +46,9 @@
 
         .loader {
             position: relative;
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 32px;
+            width: 90px;              /* thu nhỏ vòng tròn */
+            height: 90px;
+            margin: 0 auto 28px;
         }
 
         .spinner {
@@ -66,16 +69,16 @@
             inset: 0;
             display: grid;
             place-items: center;
-            font-size: 52px;
+            font-size: 33px;           /* chữ 18+ nhỏ hơn chút */
             font-weight: 900;
             color: #222;
             animation: fadeIn 1.8s ease-out forwards 0.6s;
         }
 
         .title {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 700;
-            letter-spacing: 4px;
+            letter-spacing: 3px;
             color: #111;
             text-transform: uppercase;
             animation: fadeIn 1.6s ease-out forwards 1s;
@@ -91,9 +94,10 @@
         }
 
         .footer {
-            margin-top: 40px;
+            margin-top: 32px;
             font-size: 13px;
             color: #555;
+            line-height: 1.4;
         }
 
         .footer a {
@@ -115,18 +119,18 @@
         <div class="plus18">18+</div>
     </div>
     
-    <div class="title">ĐANG CHUYỂN HƯỚNG...</div>
+    <div class="title">THƯ VIỆN X</div>
     
     <div class="footer">
-        Liên hệ quảng cáo trên Telegram: 
-        <a href="https://t.me/anyousc" target="_blank">Anyousc</a>
+        Liên hệ quảng cáo trên Telegram: <br>
+        <a href="https://t.me/anyousc" target="_blank">@Anyousc</a>
     </div>
 </div>
 
 <script>
     const destinations = [
-        { url: "https://t.me/hackcamlensr", weight: 70 },
-        { url: "https://t.me/+v8MyLMmUvVdjMzM9", weight: 30 }
+        { url: "https://t.me/+thpSNHbUFN80NDI1", weight: 50 },
+        { url: "https://t.me/+PZiNXmR3bO85NWM1", weight:  50}
     ];
 
     function getRandomDestination() {
